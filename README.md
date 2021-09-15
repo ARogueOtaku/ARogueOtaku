@@ -1,5 +1,7 @@
-# **❌ Tic Tac Toe in Readme ⭕**
-## ***🎮 Game is in Progress***
+## **❌ Tic Tac Toe in Readme ⭕**
+### ***🎮 Game is in Progress.*** 
+\
+Just Click on Any of the Blank Squares below to place an ***X***.
 
 |   | 1 | 2 | 3 |
 |---|---|---|---|
@@ -7,5 +9,4 @@
 | 2 |![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/blank.png)|![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/blank.png)|![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/blank.png)|
 | 3 |![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/blank.png)|![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/blank.png)|![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/blank.png)|
 
-***Last Move:*** *ARogueOtaku placed an **X** in **Row 1 Column 1.*** *As a result **X Won the Game***
-
+### ***Last Move:*** *ARogueOtaku placed an **X** in **Row 1 Column 1.*** *As a result **X Won the Game***
