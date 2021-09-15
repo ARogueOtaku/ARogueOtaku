@@ -1,0 +1,25 @@
+{
+  "state": {
+    "10": false,
+    "11": false,
+    "12": false,
+    "20": false,
+    "21": false,
+    "22": false,
+    "00": false,
+    "01": false,
+    "02": false
+  },
+  "cellState": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "increment": 1,
+  "symbol": "X"
+}
