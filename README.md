@@ -1,5 +1,7 @@
-# **❌ Tic Tac Toe in Readme ⭕**
-## ***🎮 Game is in Progress***
+## **❌ Tic Tac Toe in Readme ⭕**
+### ***🎮 Game is in Progress.*** 
+\
+Just Click on Any of the Blank Squares below to place an ***X***.
 
 |   | 1 | 2 | 3 |
 |---|---|---|---|
