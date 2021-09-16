@@ -99,11 +99,13 @@ function updateStateFromInput(row, column) {
 function evaluateGameState(row, column, user) {
   let winningSymbol;
   let ended = true;
-  let resultMessage = `🎲 ***Last Move:*** *${user} placed an **${gameState.symbol}** in **Row ${row} Column ${column}.***`;
+  let resultMessage = `🎲 ***Last Move:*** *${user} placed an **${resolveSymbolorIssue(
+    gameState.symbol
+  )}** in **Row ${row} Column ${column}.***`;
   if (gameState.cellState.includes(3)) winningSymbol = "X";
   else if (gameState.cellState.includes(-3)) winningSymbol = "O";
   else ended = false;
-  if (ended) resultMessage += ` *As a result **${winningSymbol} Won the Game***`;
+  if (ended) resultMessage += ` *As a result **${resolveSymbolorIssue(winningSymbol)} Won the Game***`;
   return { ended, resultMessage };
 }
 
