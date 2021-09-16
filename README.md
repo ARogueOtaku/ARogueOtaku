@@ -4,8 +4,8 @@
   
   |   | 1 | 2 | 3 |
   | - | - | - | - |
-  | 1 | ⭕ | ❌ |   |
-  | 2 | ⭕ | ❌ |   |
+  | 1 |   |   |   |
+  | 2 |   |   |   |
   | 3 |   |   |   |
   
-  🎲 ***Last Move:*** *ARogueOtaku placed an **⭕** in **Row 1 Column 0.***
+  🎲 ***Last Move:*** *ARogueOtaku placed an **❌** in **Row 2 Column 1.*** *As a result **❌ Won the Game***
