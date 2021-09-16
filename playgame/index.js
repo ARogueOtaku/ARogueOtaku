@@ -19,7 +19,7 @@ const Moves = {
 function saveGameState() {
   const gameStateString = JSON.stringify(gameState, null, "  ");
   fs.writeFileSync(gameStateFilePath, gameStateString);
-  console.log("Saving Gamestate:", gameStateString);
+  core.info("Saving Gamestate: " + gameStateString);
 }
 
 function resetGameState() {
@@ -106,7 +106,7 @@ function playTicTacToe() {
     setComment(err.message || err);
   } finally {
     core.setOutput("comment", comment);
-    //console.log(comment);
+    core.info(comment);
   }
 }
 
