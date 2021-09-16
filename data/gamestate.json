@@ -1,7 +1,7 @@
 {
   "played": {
     "10": " ",
-    "11": "X",
+    "11": " ",
     "12": " ",
     "20": " ",
     "21": " ",
@@ -12,7 +12,7 @@
   },
   "state": {
     "10": false,
-    "11": true,
+    "11": false,
     "12": false,
     "20": false,
     "21": false,
@@ -21,17 +21,8 @@
     "01": false,
     "02": false
   },
-  "cellState": [
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    1,
-    1
-  ],
-  "increment": -1,
-  "symbol": "O",
-  "lastUpdated": "Thu, 16 Sep 2021 16:59:05 GMT"
+  "cellState": [0, 0, 0, 0, 0, 0, 0, 0],
+  "increment": 1,
+  "symbol": "X",
+  "lastUpdated": "Thu, 16 Sep 2021 16:54:23 GMT"
 }

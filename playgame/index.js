@@ -152,7 +152,7 @@ function updateReadmeFromGamestate(lastMoveResultMessage = "") {
   )} | ${resolveSymbolorIssue(gameState.played["22"])} |
   
   ${lastMoveResultMessage}`;
-  fs.writeFileSync(readmePath);
+  fs.writeFileSync(readmePath, readmeString);
 }
 
 playTicTacToe();
