@@ -19,6 +19,7 @@ const Moves = {
 function saveGameState() {
   const gameStateString = JSON.stringify(gameState, null, "  ");
   fs.writeFileSync(gameStateFilePath, gameStateString);
+  console.log("Saving Gamestate:", gameStateString);
 }
 
 function resetGameState() {
