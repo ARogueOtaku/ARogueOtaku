@@ -17,6 +17,7 @@ const Moves = {
 };
 
 function saveGameState() {
+  gameState.lastUpdated = new Date().toUTCString();
   const gameStateString = JSON.stringify(gameState, null, "  ");
   fs.writeFileSync(gameStateFilePath, gameStateString);
   core.info("Saving Gamestate: " + gameStateString);
