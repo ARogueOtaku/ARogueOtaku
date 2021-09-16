@@ -2,6 +2,7 @@ const core = require("@actions/core");
 const fs = require("fs");
 const path = require("path");
 const gameStateFilePath = path.join(__dirname, "../data/gamestate.json");
+const readmePath = path.join(__dirname, "../README.md");
 let gameState = require(gameStateFilePath);
 const Moves = {
   ROWS: {
@@ -15,6 +16,14 @@ const Moves = {
     3: 2,
   },
 };
+const Symbols = {
+  X: "❌",
+  O: "⭕",
+};
+
+function resolveSymbolorIssue(character) {
+  return Symbols[character] || character;
+}
 
 function saveGameState() {
   gameState.lastUpdated = new Date().toUTCString();
@@ -25,6 +34,17 @@ function saveGameState() {
 
 function resetGameState() {
   gameState = {
+    played: {
+      10: " ",
+      11: " ",
+      12: " ",
+      20: " ",
+      21: " ",
+      22: " ",
+      "00": " ",
+      "01": " ",
+      "02": " ",
+    },
     state: {
       10: false,
       11: false,
@@ -69,6 +89,7 @@ function updateStateFromInput(row, column) {
   if (!validPlaces.includes(rowcolString) || gameState.state[rowcolString])
     throw `Cannot place an ${gameState.symbol} here!`;
   gameState.state[rowcolString] = true;
+  gameState.played[rowcolString] = gameState.symbol;
   gameState.cellState[row] += gameState.increment;
   gameState.cellState[column + 3] += gameState.increment;
   if (row === column) gameState.cellState[6] += gameState.increment;
@@ -78,7 +99,7 @@ function updateStateFromInput(row, column) {
 function evaluateGameState(row, column, user) {
   let winningSymbol;
   let ended = true;
-  let resultMessage = `### ***Last Move:*** *${user} placed an **${gameState.symbol}** in **Row ${row} Column ${column}.***`;
+  let resultMessage = `🎲 ***Last Move:*** *${user} placed an **${gameState.symbol}** in **Row ${row} Column ${column}.***`;
   if (gameState.cellState.includes(3)) winningSymbol = "X";
   else if (gameState.cellState.includes(-3)) winningSymbol = "O";
   else ended = false;
@@ -109,6 +130,28 @@ function playTicTacToe() {
     core.setOutput("comment", comment);
     core.info(comment);
   }
+}
+
+function updateReadmeFromGamestate(lastMoveResultMessage = "") {
+  let readmeString = `## **❌ Tic Tac Toe in Readme ⭕**
+  ### ***🎮 Game is in Progress.*** 
+  \
+  🖱️ Just Click on Any of the Blank Squares below to place an ***${resolveSymbolorIssue(gameState.symbol)}***.
+  
+  |   | 1 | 2 | 3 |
+  | - | - | - | - |
+  | 1 | ${resolveSymbolorIssue(gameState.played["00"])} | ${resolveSymbolorIssue(
+    gameState.played["01"]
+  )} | ${resolveSymbolorIssue(gameState.played["02"])} |
+  | 2 | ${resolveSymbolorIssue(gameState.played["10"])} | ${resolveSymbolorIssue(
+    gameState.played["11"]
+  )} | ${resolveSymbolorIssue(gameState.played["12"])} |
+  | 3 | ${resolveSymbolorIssue(gameState.played["20"])} | ${resolveSymbolorIssue(
+    gameState.played["21"]
+  )} | ${resolveSymbolorIssue(gameState.played["22"])} |
+  
+  ${lastMoveResultMessage}`;
+  fs.writeFileSync(readmePath);
 }
 
 playTicTacToe();
