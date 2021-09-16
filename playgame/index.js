@@ -122,6 +122,7 @@ function playTicTacToe() {
     //const { ended, resultMessage } = evaluateGameState(row, column, "ARogueOtaku");
     if (ended) resetGameState();
     else toggleXO();
+    updateReadmeFromGamestate(resultMessage);
     setComment(`Successfully Handled Input`);
   } catch (err) {
     setComment(err.message || err);
