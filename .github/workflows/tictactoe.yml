@@ -12,9 +12,9 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
-      - name: Pull all latest files
-        run: |
-          git pull origin master
+      # - name: Pull all latest files
+      #   run: |
+      #     git pull origin master
       - name: Play a Symbol at a Position
         id: playgame
         uses: ./playgame
