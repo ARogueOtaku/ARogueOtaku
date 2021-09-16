@@ -100,11 +100,11 @@ function playTicTacToe() {
     //const { ended, resultMessage } = evaluateGameState(row, column, "ARogueOtaku");
     if (ended) resetGameState();
     else toggleXO();
-    saveGameState();
     setComment(`Successfully Handled Input`);
   } catch (err) {
     setComment(err.message || err);
   } finally {
+    saveGameState();
     core.setOutput("comment", comment);
     core.info(comment);
   }
