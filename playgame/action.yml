@@ -1,15 +1,15 @@
-name: 'PlayGame'
-description: 'Play a Symbol at a Position'
+name: "PlayGame"
+description: "Play a Symbol at a Position"
 inputs:
   title:
-    description: 'Issue Title'
+    description: "Issue Title"
     required: true
   username:
-    description: 'Username'
+    description: "Username"
     required: true
 outputs:
   comment:
-    description: 'Issue Resolving Comment'
+    description: "Issue Resolving Comment"
 runs:
-  using: 'node12',
-  main: 'index.js'
+  using: "node12"
+  main: "index.js"
