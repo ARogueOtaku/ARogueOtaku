@@ -1,6 +1,6 @@
 {
   "played": {
-    "10": " ",
+    "10": "O",
     "11": "X",
     "12": " ",
     "20": " ",
@@ -11,7 +11,7 @@
     "02": " "
   },
   "state": {
-    "10": false,
+    "10": true,
     "11": true,
     "12": false,
     "20": false,
@@ -23,15 +23,15 @@
   },
   "cellState": [
     0,
-    1,
     0,
-    -1,
+    0,
+    -2,
     2,
     0,
     0,
     1
   ],
-  "increment": -1,
-  "symbol": "O",
-  "lastUpdated": "Thu, 16 Sep 2021 17:07:45 GMT"
+  "increment": 1,
+  "symbol": "X",
+  "lastUpdated": "Thu, 16 Sep 2021 17:08:54 GMT"
 }
