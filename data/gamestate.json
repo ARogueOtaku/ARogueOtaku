@@ -7,19 +7,19 @@
     "21": false,
     "22": false,
     "00": true,
-    "01": false,
+    "01": true,
     "02": false
   },
   "cellState": [
+    0,
+    0,
+    0,
     1,
-    0,
-    0,
-    1,
-    0,
+    -1,
     0,
     1,
     0
   ],
-  "increment": -1,
-  "symbol": "O"
+  "increment": 1,
+  "symbol": "X"
 }
