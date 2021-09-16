@@ -1,7 +1,7 @@
 name: "PlayGame"
 description: "Play a Symbol at a Position"
 inputs:
-  title:
+  issuetitle:
     description: "Issue Title"
     required: true
   username:
