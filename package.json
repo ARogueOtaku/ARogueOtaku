@@ -1,0 +1,22 @@
+{
+  "name": "arogueotaku",
+  "version": "1.0.0",
+  "description": "My Profile",
+  "main": "playgame/index.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ARogueOtaku/ARogueOtaku.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ARogueOtaku/ARogueOtaku/issues"
+  },
+  "homepage": "https://github.com/ARogueOtaku/ARogueOtaku#readme",
+  "dependencies": {
+    "@actions/core": "^1.5.0"
+  }
+}
