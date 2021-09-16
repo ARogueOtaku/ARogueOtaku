@@ -1,0 +1,15 @@
+name: 'PlayGame'
+description: 'Play a Symbol at a Position'
+inputs:
+  title:
+    description: 'Issue Title'
+    required: true
+  username:
+    description: 'Username'
+    required: true
+outputs:
+  comment:
+    description: 'Issue Resolving Comment'
+runs:
+  using: 'node12',
+  main: 'index.js'

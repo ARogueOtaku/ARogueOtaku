@@ -90,13 +90,13 @@ function playTicTacToe() {
     if (typeof cmmnt === "string") comment = cmmnt;
   }
   try {
-    // const issueTitle = core.getInput("issuetitle");
-    // const username = core.getInput("username");
-    //const { row, column } = getInputs(issueTitle);
-    const { row, column } = getInputs("TTT|33");
+    const issueTitle = core.getInput("issuetitle");
+    const username = core.getInput("username");
+    const { row, column } = getInputs(issueTitle);
+    //const { row, column } = getInputs("TTT|33");
     updateStateFromInput(row, column);
-    //const { ended, resultMessage } = evaluateGameState(row, column, username);
-    const { ended, resultMessage } = evaluateGameState(row, column, "ARogueOtaku");
+    const { ended, resultMessage } = evaluateGameState(row, column, username);
+    //const { ended, resultMessage } = evaluateGameState(row, column, "ARogueOtaku");
     if (ended) resetGameState();
     else toggleXO();
     saveGameState();
@@ -104,8 +104,8 @@ function playTicTacToe() {
   } catch (err) {
     setComment(err.message || err);
   } finally {
-    //core.setOutput("comment", comment);
-    console.log(comment);
+    core.setOutput("comment", comment);
+    //console.log(comment);
   }
 }
 

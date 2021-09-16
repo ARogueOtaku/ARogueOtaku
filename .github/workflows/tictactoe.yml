@@ -1,0 +1,38 @@
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  play-tictactoe:
+    runs-on: ubuntu-latest
+    if: startsWith(github.event.issue.title, 'TTT|')
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Pull all latest files
+        run: |
+          git pull origin master
+      - name: Play a Symbol at a Position
+        id: playgame
+        uses: ./playgame
+        with:
+          title: ${{ github.event.issue.title }}
+          username: ${{ github.event.issue.user.login }}
+      - name: Commit Readme changes
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.email "github-actions[bot]"
+          git commit -m "Add changes" -a
+      - name: Push Readme changes
+        uses: ad-m/githun-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+      - name: Close Issue
+        uses: peter-evans/close-issue@v1
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          comment: ${{ steps.playgame.outputs.comment }}
