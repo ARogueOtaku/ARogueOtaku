@@ -4,7 +4,7 @@
     
   |   | 1 | 2 | 3 |
   | - | - | - | - |
-  | 1 |   |   |   |
+  | 1 | ![](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C11&body=Just+click+%27Submit+new+issue%27.) |   |   |
   | 2 |   |   |   |
   | 3 |   |   |   |
     
