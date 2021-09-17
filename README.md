@@ -4,8 +4,6 @@
     
   |   | 1 | 2 | 3 |
   | - | - | - | - |
-  | 1 | ![](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C11&body=Just+click+%27Submit+new+issue%27.) |   |   |
+  | 1 | [![Tile 0](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C11&body=Just+click+%27Submit+new+issue%27.) |   |   |
   | 2 |   |   |   |
   | 3 |   |   |   |
-    
-  
