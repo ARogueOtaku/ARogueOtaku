@@ -125,8 +125,12 @@ function evaluateGameState(row, column, user) {
   } Column ${column + 1}.***`;
   if (gameState.cellState.includes(3)) winningSymbol = "X";
   else if (gameState.cellState.includes(-3)) winningSymbol = "O";
-  else ended = false;
-  if (ended) resultMessage += ` *As a result **${resolveSymbolorIssue(winningSymbol)} Won the Game***`;
+  else if (Object.values(gameState.state).filter((cell) => cell === true).length === 9) {
+    winningSymbol = "D";
+    resultMessage += ` *As a result the Game ended in a **Draw***`;
+  } else ended = false;
+  if (ended && winningSymbol !== "D")
+    resultMessage += ` *As a result **${resolveSymbolorIssue(winningSymbol)} Won the Game***`;
   return { ended, resultMessage };
 }
 
@@ -181,4 +185,4 @@ function playTicTacToe() {
 }
 
 playTicTacToe();
-//===============================================================================================================================
+//==============================================================================================================================
