@@ -9,9 +9,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
-        with:
-          persist-credentials: false
-          fetch-depth: 0
+        run: |
+          git pull origin master
       - name: Play a Symbol at a Position
         id: playgame
         uses: ./playgame
