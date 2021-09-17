@@ -1,3 +1,4 @@
+//=============================== Initialize and Decclare Necessary Variables and Cosntants ======================================
 const core = require("@actions/core");
 const fs = require("fs");
 const path = require("path");
@@ -20,18 +21,24 @@ const Symbols = {
   X: "❌",
   O: "⭕",
 };
+//=================================================================================================================================
 
+//================================ Generate a Symbol from a Character =================================
 function resolveSymbolorIssue(character) {
   return Symbols[character] || character;
 }
+//=====================================================================================================
 
+//========================================= Save Gamestate to File ================================================
 function saveGameState() {
   gameState.lastUpdated = new Date().toUTCString();
   const gameStateString = JSON.stringify(gameState, null, "  ");
   fs.writeFileSync(gameStateFilePath, gameStateString);
   core.info("Saving Gamestate: " + gameStateString);
 }
+//=================================================================================================================
 
+//============================================ Reset the Gamestate ================================================
 function resetGameState() {
   gameState = {
     played: {
@@ -61,8 +68,10 @@ function resetGameState() {
     symbol: "X",
   };
 }
+//===================================================================================================================
 
-function getInputs(issueTitle = "TTT|11", user) {
+//======================================= Get Input Row and Columns from Issue Title ==========================================
+function getInputs(issueTitle = "TTT|11") {
   const inpArray = issueTitle.split("|");
   const inputs = inpArray[1];
   if (!inputs) throw "Please provide a Row and a Column";
@@ -72,7 +81,9 @@ function getInputs(issueTitle = "TTT|11", user) {
   if (typeof row === undefined || typeof column === undefined) throw "Please provide a Valid Row and Column";
   return { row, column };
 }
+//=============================================================================================================================
 
+//========================================= Toggle current Gamestate Symbol ================================================
 function toggleXO() {
   if (gameState.symbol === "X") {
     gameState.symbol = "O";
@@ -82,7 +93,9 @@ function toggleXO() {
   gameState.symbol = "X";
   gameState.increment = 1;
 }
+//===========================================================================================================================
 
+//========================================== Function names are Self Explanatory :) ===============================================
 function updateStateFromInput(row, column) {
   const rowcolString = row + "" + column;
   const validPlaces = Object.keys(gameState.state);
@@ -99,9 +112,9 @@ function updateStateFromInput(row, column) {
 function evaluateGameState(row, column, user) {
   let winningSymbol;
   let ended = true;
-  let resultMessage = `🎲 ***Last Move:*** *${user} placed an **${resolveSymbolorIssue(
-    gameState.symbol
-  )}** in **Row ${row} Column ${column}.***`;
+  let resultMessage = `🎲 ***Last Move:*** *${user} placed an **${resolveSymbolorIssue(gameState.symbol)}** in **Row ${
+    row + 1
+  } Column ${column + 1}.***`;
   if (gameState.cellState.includes(3)) winningSymbol = "X";
   else if (gameState.cellState.includes(-3)) winningSymbol = "O";
   else ended = false;
@@ -109,6 +122,30 @@ function evaluateGameState(row, column, user) {
   return { ended, resultMessage };
 }
 
+function updateReadmeFromGamestate(lastMoveResultMessage = "") {
+  let readmeString = `## **❌ Tic Tac Toe in Readme ⭕**
+### ***🎮 Game is in Progress.*** 
+\
+🖱️ Just Click on Any of the Blank Squares below to place an ${resolveSymbolorIssue(gameState.symbol)}.
+  
+|   | 1 | 2 | 3 |
+| - | - | - | - |
+| 1 | ${resolveSymbolorIssue(gameState.played["00"])} | ${resolveSymbolorIssue(
+    gameState.played["01"]
+  )} | ${resolveSymbolorIssue(gameState.played["02"])} |
+| 2 | ${resolveSymbolorIssue(gameState.played["10"])} | ${resolveSymbolorIssue(
+    gameState.played["11"]
+  )} | ${resolveSymbolorIssue(gameState.played["12"])} |
+| 3 | ${resolveSymbolorIssue(gameState.played["20"])} | ${resolveSymbolorIssue(
+    gameState.played["21"]
+  )} | ${resolveSymbolorIssue(gameState.played["22"])} |
+  
+${lastMoveResultMessage}`;
+  fs.writeFileSync(readmePath, readmeString);
+}
+//=============================================================================================================================
+
+//========================================= Play the Game on Issue Creation ===================================================
 function playTicTacToe() {
   let comment = ``;
   function setComment(cmmnt) {
@@ -135,26 +172,5 @@ function playTicTacToe() {
   }
 }
 
-function updateReadmeFromGamestate(lastMoveResultMessage = "") {
-  let readmeString = `## **❌ Tic Tac Toe in Readme ⭕**
-  ### ***🎮 Game is in Progress.*** 
-  \
-  🖱️ Just Click on Any of the Blank Squares below to place an ***${resolveSymbolorIssue(gameState.symbol)}***.
-  
-  |   | 1 | 2 | 3 |
-  | - | - | - | - |
-  | 1 | ${resolveSymbolorIssue(gameState.played["00"])} | ${resolveSymbolorIssue(
-    gameState.played["01"]
-  )} | ${resolveSymbolorIssue(gameState.played["02"])} |
-  | 2 | ${resolveSymbolorIssue(gameState.played["10"])} | ${resolveSymbolorIssue(
-    gameState.played["11"]
-  )} | ${resolveSymbolorIssue(gameState.played["12"])} |
-  | 3 | ${resolveSymbolorIssue(gameState.played["20"])} | ${resolveSymbolorIssue(
-    gameState.played["21"]
-  )} | ${resolveSymbolorIssue(gameState.played["22"])} |
-  
-  ${lastMoveResultMessage}`;
-  fs.writeFileSync(readmePath, readmeString);
-}
-
 playTicTacToe();
+//===============================================================================================================================

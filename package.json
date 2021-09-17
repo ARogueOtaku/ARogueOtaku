@@ -4,7 +4,8 @@
   "description": "My Profile",
   "main": "playgame/index.js",
   "scripts": {
-    "test": "node ."
+    "test": "node .",
+    "reset-game": "git pull && node utils/resetGamestate.js && git commit -am \"Reset Game State\""
   },
   "repository": {
     "type": "git",
