@@ -21,11 +21,19 @@ const Symbols = {
   X: "❌",
   O: "⭕",
 };
+const Images = {
+  X: "![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/X.png)",
+  O: "![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/O.png)",
+};
 //=================================================================================================================================
 
-//================================ Generate a Symbol from a Character =================================
+//================================ Generate a Symbol/Image from a Character =================================
 function resolveSymbolorIssue(character) {
   return Symbols[character] || character;
+}
+
+function resolveImageorIssue(character) {
+  return Images[character] || character;
 }
 //=====================================================================================================
 
@@ -130,15 +138,15 @@ function updateReadmeFromGamestate(lastMoveResultMessage = "") {
   
 |   | 1 | 2 | 3 |
 | - | - | - | - |
-| 1 | ${resolveSymbolorIssue(gameState.played["00"])} | ${resolveSymbolorIssue(
+| 1 | ${resolveImageorIssue(gameState.played["00"])} | ${resolveImageorIssue(
     gameState.played["01"]
-  )} | ${resolveSymbolorIssue(gameState.played["02"])} |
-| 2 | ${resolveSymbolorIssue(gameState.played["10"])} | ${resolveSymbolorIssue(
+  )} | ${resolveImageorIssue(gameState.played["02"])} |
+| 2 | ${resolveImageorIssue(gameState.played["10"])} | ${resolveImageorIssue(
     gameState.played["11"]
-  )} | ${resolveSymbolorIssue(gameState.played["12"])} |
-| 3 | ${resolveSymbolorIssue(gameState.played["20"])} | ${resolveSymbolorIssue(
+  )} | ${resolveImageorIssue(gameState.played["12"])} |
+| 3 | ${resolveImageorIssue(gameState.played["20"])} | ${resolveImageorIssue(
     gameState.played["21"]
-  )} | ${resolveSymbolorIssue(gameState.played["22"])} |
+  )} | ${resolveImageorIssue(gameState.played["22"])} |
   
 ${lastMoveResultMessage}`;
   fs.writeFileSync(readmePath, readmeString);
