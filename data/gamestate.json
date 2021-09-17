@@ -2,7 +2,7 @@
   "played": {
     "10": "O",
     "11": "X",
-    "12": "[![Tile 5](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C23&body=Just+click+%27Submit+new+issue%27.)",
+    "12": "X",
     "20": "O",
     "21": "X",
     "22": "O",
@@ -13,7 +13,7 @@
   "state": {
     "10": true,
     "11": true,
-    "12": false,
+    "12": true,
     "20": true,
     "21": true,
     "22": true,
@@ -23,15 +23,15 @@
   },
   "cellState": [
     1,
-    0,
+    1,
     -1,
     -1,
     1,
-    0,
+    1,
     1,
     1
   ],
-  "increment": 1,
-  "symbol": "X",
-  "lastUpdated": "Fri, 17 Sep 2021 10:51:35 GMT"
+  "increment": -1,
+  "symbol": "O",
+  "lastUpdated": "Fri, 17 Sep 2021 10:52:04 GMT"
 }
