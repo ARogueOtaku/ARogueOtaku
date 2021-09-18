@@ -137,7 +137,7 @@ function evaluateGameState(row, column, user) {
 function updateReadmeFromGamestate(lastMoveResultMessage = "") {
   let readmeString = `## Namaste 🙏. I'm Amit, a Front-End Developer from India <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" width=35/>
 
-  ### 📖 A little more about me...
+  ### 📖 A little ~~more~~ \`\`\`code\`\`\` about me...
   \`\`\`javascript
   import { Human } from '@earth/animals';
   import { Days } from 'calendar';
