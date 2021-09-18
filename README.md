@@ -9,30 +9,30 @@
     constructor(day) {
       this.today = day;
       this.age = 26;
-          this.familiarWith = [`JavaScript`, `React`, `Node`, `CSS`, `Core Java`, `SQL`];
-          this.learning = [`TypeScript`, `Redux`, `Jest`, `Webpack`, `MongoDB`, `YAML`, `Material UI`];
-          this.hobbies = [`Coding`, `Gaming`, `Learning new Tech`];
+      this.familiarWith = [`JavaScript`, `React`, `Node`, `CSS`, `Core Java`, `SQL`];
+      this.learning = [`TypeScript`, `Redux`, `Jest`, `Webpack`, `MongoDB`, `YAML`, `Material UI`];
+      this.hobbies = [`Coding`, `Gaming`, `Learning new Tech`];
       this.academicHistory = [
         {
           institution: `St. Xavier's Institution`,
-                  passout: `2011`,
-                  specialization: `N/A`,
-                  location: `Kolkata, West Bengal`,
-                  degree: `Secondary`,
+          passout: `2011`,
+          specialization: `N/A`,
+          location: `Kolkata, West Bengal`,
+          degree: `Secondary`,
         },
         {
           institution: `St. Xavier's Institution`,
-                  passout: `2013`,
-                  location: `Kolkata, West Bengal`,
-                  specialization: `Science`,
-                  degree: `Higher Secondary`,
+          passout: `2013`,
+          location: `Kolkata, West Bengal`,
+          specialization: `Science`,
+          degree: `Higher Secondary`,
         },
         {
           institution: `University of Engineering & Management`,
-                  passout: `2017`,
-                  location: `Jaipur, Rajasthan`,
-                  specialization: `Computer Science`,
-                  degree: `B.Tech`,
+          passout: `2017`,
+          location: `Jaipur, Rajasthan`,
+          specialization: `Computer Science`,
+          degree: `B.Tech`,
         },
       ];
       this.professionalHistory = [
@@ -52,21 +52,21 @@
         },
       ];
     }
-      live() {
-          if([Days.SUNDAY, Days.SATURDAY].includes(this.day)) {
-              this.wakeUp();
-              this.game();
-              this.eat();
-              this.learn();
-              this.sleep();
-              return;
-          }
-          this.wakeUp();
-          this.work();
-          this.eat();
-          this.work();
-          this.sleep();
+    live() {
+      if([Days.SUNDAY, Days.SATURDAY].includes(this.today)) {
+        this.wakeUp();
+        this.game();
+        this.eat();
+        this.learn();
+        this.sleep();
+        return;
       }
+      this.wakeUp();
+      this.work();
+      this.eat();
+      this.work();
+      this.sleep();
+    }
   }
   
   let today = new Date();
@@ -79,15 +79,15 @@
 
 ### **❌ Tic Tac Toe in Readme ⭕**
  
-🖱️ Just Click on Any of the Blank Squares below to place an ❌.
+🖱️ Just Click on Any of the Blank Squares below to place an ⭕.
   
 |   | 1 | 2 | 3 |
 | - | - | - | - |
 | 1 | ![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/X.png) | ![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/O.png) | ![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/X.png) |
 | 2 | [![Tile 3](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C21&body=Just+click+%27Submit+new+issue%27.) | ![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/O.png) | [![Tile 5](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C23&body=Just+click+%27Submit+new+issue%27.) |
-| 3 | [![Tile 6](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C31&body=Just+click+%27Submit+new+issue%27.) | [![Tile 7](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C32&body=Just+click+%27Submit+new+issue%27.) | [![Tile 8](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C33&body=Just+click+%27Submit+new+issue%27.) |
+| 3 | ![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/X.png) | [![Tile 7](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C32&body=Just+click+%27Submit+new+issue%27.) | [![Tile 8](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C33&body=Just+click+%27Submit+new+issue%27.) |
   
-🎲 ***Last Move:*** *ARogueOtaku placed an **⭕** in **Row 2 Column 2.***
+🎲 ***Last Move:*** *ARogueOtaku placed an **❌** in **Row 3 Column 1.***
 
 ---
 
