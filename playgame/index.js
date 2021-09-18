@@ -231,7 +231,14 @@ function updateReadmeFromGamestate(lastMoveResultMessage = "") {
     gameState.played["21"]
   )} | ${resolveImageorIssue(gameState.played["22"])} |
   
-${lastMoveResultMessage}`;
+${lastMoveResultMessage}
+
+---
+
+### **How it Works?**
+It is pretty simple. Clicking on a Blank Square will redirect to an issue creation page. Everything will be pre-populated. You just need to click on 'Submit new issue'. An Issue will be created and a workflow will be triggered in the background. This workflow will trigger a script to process the issue title and then update the README. 
+
+---`;
   fs.writeFileSync(readmePath, readmeString);
 }
 //=============================================================================================================================
