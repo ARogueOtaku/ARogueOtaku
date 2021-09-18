@@ -146,30 +146,30 @@ function updateReadmeFromGamestate(lastMoveResultMessage = "") {
     constructor(day) {
       this.today = day;
       this.age = 26;
-          this.familiarWith = [\`JavaScript\`, \`React\`, \`Node\`, \`CSS\`, \`Core Java\`, \`SQL\`];
-          this.learning = [\`TypeScript\`, \`Redux\`, \`Jest\`, \`Webpack\`, \`MongoDB\`, \`YAML\`, \`Material UI\`];
-          this.hobbies = [\`Coding\`, \`Gaming\`, \`Learning new Tech\`];
+      this.familiarWith = [\`JavaScript\`, \`React\`, \`Node\`, \`CSS\`, \`Core Java\`, \`SQL\`];
+      this.learning = [\`TypeScript\`, \`Redux\`, \`Jest\`, \`Webpack\`, \`MongoDB\`, \`YAML\`, \`Material UI\`];
+      this.hobbies = [\`Coding\`, \`Gaming\`, \`Learning new Tech\`];
       this.academicHistory = [
         {
           institution: \`St. Xavier's Institution\`,
-                  passout: \`2011\`,
-                  specialization: \`N/A\`,
-                  location: \`Kolkata, West Bengal\`,
-                  degree: \`Secondary\`,
+          passout: \`2011\`,
+          specialization: \`N/A\`,
+          location: \`Kolkata, West Bengal\`,
+          degree: \`Secondary\`,
         },
         {
           institution: \`St. Xavier's Institution\`,
-                  passout: \`2013\`,
-                  location: \`Kolkata, West Bengal\`,
-                  specialization: \`Science\`,
-                  degree: \`Higher Secondary\`,
+          passout: \`2013\`,
+          location: \`Kolkata, West Bengal\`,
+          specialization: \`Science\`,
+          degree: \`Higher Secondary\`,
         },
         {
           institution: \`University of Engineering & Management\`,
-                  passout: \`2017\`,
-                  location: \`Jaipur, Rajasthan\`,
-                  specialization: \`Computer Science\`,
-                  degree: \`B.Tech\`,
+          passout: \`2017\`,
+          location: \`Jaipur, Rajasthan\`,
+          specialization: \`Computer Science\`,
+          degree: \`B.Tech\`,
         },
       ];
       this.professionalHistory = [
@@ -189,21 +189,21 @@ function updateReadmeFromGamestate(lastMoveResultMessage = "") {
         },
       ];
     }
-      live() {
-          if([Days.SUNDAY, Days.SATURDAY].includes(this.day)) {
-              this.wakeUp();
-              this.game();
-              this.eat();
-              this.learn();
-              this.sleep();
-              return;
-          }
-          this.wakeUp();
-          this.work();
-          this.eat();
-          this.work();
-          this.sleep();
+    live() {
+      if([Days.SUNDAY, Days.SATURDAY].includes(this.today)) {
+        this.wakeUp();
+        this.game();
+        this.eat();
+        this.learn();
+        this.sleep();
+        return;
       }
+      this.wakeUp();
+      this.work();
+      this.eat();
+      this.work();
+      this.sleep();
+    }
   }
   
   let today = new Date();
