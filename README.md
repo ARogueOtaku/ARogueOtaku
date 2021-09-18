@@ -1,6 +1,6 @@
 ## Namaste 🙏. I'm Amit, a Front-End Developer from India <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" width=35/>
 
-  ### 📖 A little more about me...
+  ### 📖 A little ~~more~~ ```code``` about me...
   ```javascript
   import { Human } from '@earth/animals';
   import { Days } from 'calendar';
@@ -79,15 +79,15 @@
 
 ### **❌ Tic Tac Toe in Readme ⭕**
  
-🖱️ Just Click on Any of the Blank Squares below to place an ⭕.
+🖱️ Just Click on Any of the Blank Squares below to place an ❌.
   
 |   | 1 | 2 | 3 |
 | - | - | - | - |
 | 1 | ![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/X.png) | ![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/O.png) | ![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/X.png) |
-| 2 | [![Tile 3](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C21&body=Just+click+%27Submit+new+issue%27.) | [![Tile 4](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C22&body=Just+click+%27Submit+new+issue%27.) | [![Tile 5](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C23&body=Just+click+%27Submit+new+issue%27.) |
+| 2 | [![Tile 3](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C21&body=Just+click+%27Submit+new+issue%27.) | ![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/O.png) | [![Tile 5](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C23&body=Just+click+%27Submit+new+issue%27.) |
 | 3 | [![Tile 6](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C31&body=Just+click+%27Submit+new+issue%27.) | [![Tile 7](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C32&body=Just+click+%27Submit+new+issue%27.) | [![Tile 8](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C33&body=Just+click+%27Submit+new+issue%27.) |
   
-🎲 ***Last Move:*** *ARogueOtaku placed an **❌** in **Row 1 Column 3.***
+🎲 ***Last Move:*** *ARogueOtaku placed an **⭕** in **Row 2 Column 2.***
 
 ---
 
