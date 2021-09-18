@@ -190,7 +190,7 @@ function updateReadmeFromGamestate(lastMoveResultMessage = "") {
       ];
     }
       live() {
-          if([Days.SUNDAY, Days.MONDAY].includes(this.day)) {
+          if([Days.SUNDAY, Days.SATURDAY].includes(this.day)) {
               this.wakeUp();
               this.game();
               this.eat();
