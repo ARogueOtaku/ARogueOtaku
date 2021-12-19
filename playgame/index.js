@@ -187,6 +187,13 @@ function updateReadmeFromGamestate(lastMoveResultMessage = "") {
           location: \`Kolkata, West Bengal\`,
           designation: \`Solutions Engineer\`
         },
+        {
+        name: \`Accolite Digital\`,
+        started: \`Nov, 2021\`,
+        ended: null,
+        location: \`Bangalore, Karnataka\`,
+        designation: \`Senior Software Engineer\`
+      },
       ];
     }
     live() {
