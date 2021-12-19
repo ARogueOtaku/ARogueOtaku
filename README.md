@@ -46,9 +46,16 @@
         {
           name: `Labvantage Solutions`,
           started: `Jun, 2019`,
-          ended: null,
+          ended: `Nov, 2021`,
           location: `Kolkata, West Bengal`,
           designation: `Solutions Engineer`
+        },
+        {
+          name: `Accolite Digital`,
+          started: `Nov, 2021`,
+          ended: null,
+          location: `Bangalore, Karnataka`,
+          designation: `Senior Software Engineer`
         },
       ];
     }
