@@ -90,11 +90,11 @@
   
 |   | 1 | 2 | 3 |
 | - | - | - | - |
-| 1 | ![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/O.png) | ![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/X.png) | ![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/O.png) |
-| 2 | [![Tile 3](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C21&body=Just+click+%27Submit+new+issue%27.) | ![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/X.png) | ![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/O.png) |
-| 3 | ![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/X.png) | ![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/O.png) | ![](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/X.png) |
+| 1 | [![Tile 0](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C11&body=Just+click+%27Submit+new+issue%27.) | [![Tile 1](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C12&body=Just+click+%27Submit+new+issue%27.) | [![Tile 2](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C13&body=Just+click+%27Submit+new+issue%27.) |
+| 2 | [![Tile 3](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C21&body=Just+click+%27Submit+new+issue%27.) | [![Tile 4](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C22&body=Just+click+%27Submit+new+issue%27.) | [![Tile 5](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C23&body=Just+click+%27Submit+new+issue%27.) |
+| 3 | [![Tile 6](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C31&body=Just+click+%27Submit+new+issue%27.) | [![Tile 7](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C32&body=Just+click+%27Submit+new+issue%27.) | [![Tile 8](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C33&body=Just+click+%27Submit+new+issue%27.) |
   
-🎲 ***Last Move:*** *ARogueOtaku placed an **⭕** in **Row 2 Column 3.***
+🎲 ***Last Move:*** *BiswajitKrPaul placed an **❌** in **Row 2 Column 1.*** *As a result the Game ended in a **Draw***
 
 ---
 
