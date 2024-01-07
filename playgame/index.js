@@ -125,7 +125,7 @@ function evaluateGameState(row, column, user) {
     gameState.symbol
   )}** in **Row ${row + 1} Column ${
     column + 1
-  } on ${new Date().toLocaleString()}.***`;
+  }*** on ***${new Date().toLocaleString()}***.`;
   if (gameState.cellState.includes(3)) winningSymbol = "X";
   else if (gameState.cellState.includes(-3)) winningSymbol = "O";
   else if (
