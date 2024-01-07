@@ -8,7 +8,7 @@
     "22": "O",
     "00": "X",
     "01": "[![Tile 1](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C12&body=Just+click+%27Submit+new+issue%27.)",
-    "02": "[![Tile 2](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C13&body=Just+click+%27Submit+new+issue%27.)"
+    "02": "O"
   },
   "state": {
     "10": false,
@@ -19,19 +19,19 @@
     "22": true,
     "00": true,
     "01": false,
-    "02": false
+    "02": true
   },
   "cellState": [
-    1,
+    0,
     0,
     0,
     2,
     0,
-    -1,
+    -2,
     0,
-    1
+    0
   ],
-  "increment": -1,
-  "symbol": "O",
-  "lastUpdated": "Sun, 07 Jan 2024 15:26:44 GMT"
+  "increment": 1,
+  "symbol": "X",
+  "lastUpdated": "Sun, 07 Jan 2024 15:26:56 GMT"
 }
