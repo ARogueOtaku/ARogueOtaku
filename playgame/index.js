@@ -123,7 +123,9 @@ function evaluateGameState(row, column, user) {
   let ended = true;
   let resultMessage = `🎲 ***Last Move:*** *${user} placed an **${resolveSymbolorIssue(
     gameState.symbol
-  )}** in **Row ${row + 1} Column ${column + 1}.***`;
+  )}** in **Row ${row + 1} Column ${
+    column + 1
+  } on ${new Date().toLocaleString()}.***`;
   if (gameState.cellState.includes(3)) winningSymbol = "X";
   else if (gameState.cellState.includes(-3)) winningSymbol = "O";
   else if (
