@@ -1,88 +1,110 @@
 ## Namaste 🙏. I'm Amit, a Front-End Developer from India <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" width=35/>
 
-  ### 📖 A little ~~more~~ ```code``` about me...
-  ```javascript
-  import { Human } from '@earth/animals';
-  import { Days } from 'calendar';
-  
-  class Amit extends Human {
-    constructor(day) {
-      this.today = day;
-      this.age = 26;
-      this.familiarWith = [`JavaScript`, `React`, `Node`, `CSS`, `Core Java`, `SQL`];
-      this.learning = [`TypeScript`, `Redux`, `Jest`, `Webpack`, `MongoDB`, `YAML`, `Material UI`];
-      this.hobbies = [`Coding`, `Gaming`, `Learning new Tech`];
-      this.academicHistory = [
-        {
-          institution: `St. Xavier's Institution`,
-          passout: `2011`,
-          specialization: `N/A`,
-          location: `Kolkata, West Bengal`,
-          degree: `Secondary`,
-        },
-        {
-          institution: `St. Xavier's Institution`,
-          passout: `2013`,
-          location: `Kolkata, West Bengal`,
-          specialization: `Science`,
-          degree: `Higher Secondary`,
-        },
-        {
-          institution: `University of Engineering & Management`,
-          passout: `2017`,
-          location: `Jaipur, Rajasthan`,
-          specialization: `Computer Science`,
-          degree: `B.Tech`,
-        },
-      ];
-      this.professionalHistory = [
-        {
-          name: `Infosys Limited`,
-          started: `Oct, 2017`,
-          ended: `Jun, 2019`,
-          location: `Bangalore, Karnataka`,
-          designation: `Systems Engineer`
-        },
-        {
-          name: `Labvantage Solutions`,
-          started: `Jun, 2019`,
-          ended: null,
-          location: `Kolkata, West Bengal`,
-          designation: `Solutions Engineer`
-        },
-        {
+### 📖 A little ~~more~~ `code` about me...
+
+```javascript
+import { Human } from "@earth/animals";
+import { Days } from "calendar";
+
+class Amit extends Human {
+  constructor(day) {
+    this.today = day;
+    this.age = 26;
+    this.familiarWith = [
+      `HTML`,
+      `CSS`,
+      `JavaScript`,
+      `TypeScript`,
+      `React`,
+      `Redux`,
+      `Node`,
+      `Core Java`,
+      `SQL`,
+      `Jest`,
+      `Webpack`,
+      `Material UI`,
+      `TailwindCSS`,
+    ];
+    this.learning = [`Godot`, `React Native`, `Docker`, `Python`];
+    this.hobbies = [`Coding`, `Gaming`, `Learning new Tech`];
+    this.academicHistory = [
+      {
+        institution: `St. Xavier's Institution`,
+        passout: `2011`,
+        specialization: `N/A`,
+        location: `Kolkata, West Bengal`,
+        degree: `Secondary`,
+      },
+      {
+        institution: `St. Xavier's Institution`,
+        passout: `2013`,
+        location: `Kolkata, West Bengal`,
+        specialization: `Science`,
+        degree: `Higher Secondary`,
+      },
+      {
+        institution: `University of Engineering & Management`,
+        passout: `2017`,
+        location: `Jaipur, Rajasthan`,
+        specialization: `Computer Science`,
+        degree: `B.Tech`,
+      },
+    ];
+    this.professionalHistory = [
+      {
+        name: `LearningMate Solutions`,
+        started: `July, 2023`,
+        ended: null,
+        location: `Kolkata, West Bengal`,
+        designation: `Senior Software Engineer`,
+      },
+      {
         name: `Accolite Digital`,
         started: `Nov, 2021`,
-        ended: null,
+        ended: `July, 2023`,
         location: `Bangalore, Karnataka`,
-        designation: `Senior Software Engineer`
+        designation: `Senior Software Engineer`,
       },
-      ];
-    }
-    live() {
-      if([Days.SUNDAY, Days.SATURDAY].includes(this.today)) {
-        this.wakeUp();
-        this.game();
-        this.eat();
-        this.learn();
-        this.sleep();
-        return;
-      }
+      {
+        name: `Labvantage Solutions`,
+        started: `Jun, 2019`,
+        ended: `Nov, 2021`,
+        location: `Kolkata, West Bengal`,
+        designation: `Solutions Engineer`,
+      },
+      {
+        name: `Infosys Limited`,
+        started: `Oct, 2017`,
+        ended: `Jun, 2019`,
+        location: `Bangalore, Karnataka`,
+        designation: `Systems Engineer`,
+      },
+    ];
+  }
+  live() {
+    if ([Days.SUNDAY, Days.SATURDAY].includes(this.today)) {
       this.wakeUp();
-      this.work();
+      this.game();
       this.eat();
-      this.work();
+      this.learn();
       this.sleep();
+      return;
     }
+    this.wakeUp();
+    this.work();
+    this.eat();
+    this.work();
+    this.sleep();
   }
-  
-  let today = new Date();
-  while(today !== Days.END) {
-      (new Amit(today)).live();
-  }
-  ```
-  
-  ---
+}
+
+let today = new Date();
+while (today !== Days.END) {
+  new Amit(today).live();
+}
+```
+
+---
 
 ### **❌ Tic Tac Toe in Readme ⭕**
  
@@ -99,6 +121,7 @@
 ---
 
 ### **How it Works?**
-It is pretty simple. Clicking on a Blank Square will redirect to an issue creation page. Everything will be pre-populated. You just need to click on 'Submit new issue'. An Issue will be created and a workflow will be triggered in the background. This workflow will trigger a script to process the issue title and then update the README. 
+
+It is pretty simple. Clicking on a Blank Square will redirect to an issue creation page. Everything will be pre-populated. You just need to click on 'Submit new issue'. An Issue will be created and a workflow will be triggered in the background. This workflow will trigger a script to process the issue title and then update the README.
 
 ---

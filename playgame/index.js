@@ -86,7 +86,8 @@ function getInputs(issueTitle = "TTT|11") {
   const rowcol = inputs.split("");
   const row = Moves.ROWS[rowcol[0]];
   const column = Moves.COLUMNS[rowcol[1]];
-  if (typeof row === undefined || typeof column === undefined) throw "Please provide a Valid Row and Column";
+  if (typeof row === undefined || typeof column === undefined)
+    throw "Please provide a Valid Row and Column";
   return { row, column };
 }
 //=============================================================================================================================
@@ -120,17 +121,21 @@ function updateStateFromInput(row, column) {
 function evaluateGameState(row, column, user) {
   let winningSymbol;
   let ended = true;
-  let resultMessage = `🎲 ***Last Move:*** *${user} placed an **${resolveSymbolorIssue(gameState.symbol)}** in **Row ${
-    row + 1
-  } Column ${column + 1}.***`;
+  let resultMessage = `🎲 ***Last Move:*** *${user} placed an **${resolveSymbolorIssue(
+    gameState.symbol
+  )}** in **Row ${row + 1} Column ${column + 1}.***`;
   if (gameState.cellState.includes(3)) winningSymbol = "X";
   else if (gameState.cellState.includes(-3)) winningSymbol = "O";
-  else if (Object.values(gameState.state).filter((cell) => cell === true).length === 9) {
+  else if (
+    Object.values(gameState.state).filter((cell) => cell === true).length === 9
+  ) {
     winningSymbol = "D";
     resultMessage += ` *As a result the Game ended in a **Draw***`;
   } else ended = false;
   if (ended && winningSymbol !== "D")
-    resultMessage += ` *As a result **${resolveSymbolorIssue(winningSymbol)} Won the Game***`;
+    resultMessage += ` *As a result **${resolveSymbolorIssue(
+      winningSymbol
+    )} Won the Game***`;
   return { ended, resultMessage };
 }
 
@@ -146,8 +151,22 @@ function updateReadmeFromGamestate(lastMoveResultMessage = "") {
     constructor(day) {
       this.today = day;
       this.age = 26;
-      this.familiarWith = [\`JavaScript\`, \`React\`, \`Node\`, \`CSS\`, \`Core Java\`, \`SQL\`];
-      this.learning = [\`TypeScript\`, \`Redux\`, \`Jest\`, \`Webpack\`, \`MongoDB\`, \`YAML\`, \`Material UI\`];
+      this.familiarWith = [
+        \`HTML\`,
+        \`CSS\`,
+        \`JavaScript\`,
+        \`TypeScript\`,
+        \`React\`,
+        \`Redux\`,
+        \`Node\`,
+        \`Core Java\`,
+        \`SQL\`,
+        \`Jest\`,
+        \`Webpack\`,
+        \`Material UI\`,
+        \`TailwindCSS\`,
+      ];
+      this.learning = [\`Godot\`, \`React Native\`, \`Docker\`, \`Python\`];
       this.hobbies = [\`Coding\`, \`Gaming\`, \`Learning new Tech\`];
       this.academicHistory = [
         {
@@ -174,26 +193,33 @@ function updateReadmeFromGamestate(lastMoveResultMessage = "") {
       ];
       this.professionalHistory = [
         {
-          name: \`Infosys Limited\`,
-          started: \`Oct, 2017\`,
-          ended: \`Jun, 2019\`,
+          name: \`LearningMate Solutions\`,
+          started: \`July, 2023\`,
+          ended: null,
+          location: \`Kolkata, West Bengal\`,
+          designation: \`Senior Software Engineer\`,
+        },
+        {
+          name: \`Accolite Digital\`,
+          started: \`Nov, 2021\`,
+          ended: \`July, 2023\`,
           location: \`Bangalore, Karnataka\`,
-          designation: \`Systems Engineer\`
+          designation: \`Senior Software Engineer\`,
         },
         {
           name: \`Labvantage Solutions\`,
           started: \`Jun, 2019\`,
-          ended: null,
+          ended: \`Nov, 2021\`,
           location: \`Kolkata, West Bengal\`,
-          designation: \`Solutions Engineer\`
+          designation: \`Solutions Engineer\`,
         },
         {
-        name: \`Accolite Digital\`,
-        started: \`Nov, 2021\`,
-        ended: null,
-        location: \`Bangalore, Karnataka\`,
-        designation: \`Senior Software Engineer\`
-      },
+          name: \`Infosys Limited\`,
+          started: \`Oct, 2017\`,
+          ended: \`Jun, 2019\`,
+          location: \`Bangalore, Karnataka\`,
+          designation: \`Systems Engineer\`,
+        },
       ];
     }
     live() {
@@ -224,7 +250,9 @@ function updateReadmeFromGamestate(lastMoveResultMessage = "") {
 ### **❌ Tic Tac Toe in Readme ⭕**
  
 \
-🖱️ Just Click on Any of the Blank Squares below to place an ${resolveSymbolorIssue(gameState.symbol)}.
+🖱️ Just Click on Any of the Blank Squares below to place an ${resolveSymbolorIssue(
+    gameState.symbol
+  )}.
   
 |   | 1 | 2 | 3 |
 | - | - | - | - |
