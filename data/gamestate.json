@@ -3,7 +3,7 @@
     "10": "[![Tile 3](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C21&body=Just+click+%27Submit+new+issue%27.)",
     "11": "[![Tile 4](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C22&body=Just+click+%27Submit+new+issue%27.)",
     "12": "[![Tile 5](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C23&body=Just+click+%27Submit+new+issue%27.)",
-    "20": "[![Tile 6](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C31&body=Just+click+%27Submit+new+issue%27.)",
+    "20": "X",
     "21": "[![Tile 7](https://raw.githubusercontent.com/ARogueOtaku/ARogueOtaku/master/assets/blank.png)](https://github.com/ARogueOtaku/ARogueOtaku/issues/new?title=TTT%7C32&body=Just+click+%27Submit+new+issue%27.)",
     "22": "O",
     "00": "X",
@@ -14,7 +14,7 @@
     "10": false,
     "11": false,
     "12": false,
-    "20": false,
+    "20": true,
     "21": false,
     "22": true,
     "00": true,
@@ -24,14 +24,14 @@
   "cellState": [
     1,
     0,
-    -1,
-    1,
+    0,
+    2,
     0,
     -1,
     0,
-    0
+    1
   ],
-  "increment": 1,
-  "symbol": "X",
-  "lastUpdated": "Sun, 07 Jan 2024 15:26:13 GMT"
+  "increment": -1,
+  "symbol": "O",
+  "lastUpdated": "Sun, 07 Jan 2024 15:26:44 GMT"
 }
